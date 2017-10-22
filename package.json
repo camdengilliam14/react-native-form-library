@@ -1,0 +1,20 @@
+{
+  "name": "react-native-form-library",
+  "version": "1.0.0",
+  "description": "This is a library to provide common form helpers, such as updating field properties or validating field requirements, to your application.",
+  "homepage": "https://github.com/camdengilliam14/react-native-form-library",
+  "main": "./distribution/index.js",
+  "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --plugins transform-object-rest-spread --out-dir distribution",
+    "prepublish": "npm run build"
+  },
+  "author": "Camden Gilliam (camden@fortyau.com)",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
