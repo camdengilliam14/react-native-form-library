@@ -7,6 +7,14 @@ class Select extends React.Component {
 		super(props);
 		this.state = {value: this.props.value};
 	}
+
+	/*
+  * Custom on blur function.
+  */
+	onBlur() {
+		if (this.props.onBlur) this.props.onBlur()
+	}
+
 	/*
   * Change the value of form component.
   *
@@ -43,6 +51,7 @@ class Select extends React.Component {
 
 Select.propTypes = {
 	name: PropTypes.string,
+	onBlur: PropTypes.func,
 	onChange: PropTypes.func,
 	options: PropTypes.array,
   style:PropTypes.oneOfType([
