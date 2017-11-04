@@ -1,6 +1,6 @@
 {
   "name": "react-native-form-library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a library to provide common form helpers, such as updating field properties or validating field requirements, to your application.",
   "homepage": "https://github.com/camdengilliam14/react-native-form-library",
   "main": "./distribution/index.js",
