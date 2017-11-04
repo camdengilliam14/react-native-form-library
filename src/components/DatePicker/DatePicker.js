@@ -40,6 +40,8 @@ class DatePicker extends React.Component {
       day = defaultValue  && defaultValue[2] ? parseInt(defaultValue[2]) : day
 		}
 
+    this.props.onChange(this.props.name, `${year}-${month}-${day}`);
+
 		return { year, month, day };
   }
 	/*

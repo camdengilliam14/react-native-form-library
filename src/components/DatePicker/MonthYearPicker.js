@@ -35,6 +35,8 @@ class MonthYearPicker extends React.Component {
 			month = defaultValue && defaultValue[1] ? parseInt(defaultValue[1]): month
 		}
 
+    this.props.onChange(this.props.name, `${year}-${month}`);
+
 		return { year, month };
   }
 	/*
