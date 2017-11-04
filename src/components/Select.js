@@ -3,11 +3,6 @@ import PropTypes from 'prop-types'
 import {Picker} from 'react-native'
 
 class Select extends React.Component {
-	constructor(props){
-		super(props);
-		this.state = {value: this.props.value};
-	}
-
 	/*
   * Custom on blur function.
   */
