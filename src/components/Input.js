@@ -57,7 +57,7 @@ class Input extends React.Component {
 		if (this.state.isFocused) {
 			if (containerActiveStyle) containerStyles.push(containerActiveStyle)
 			if (labelActiveStyle) labelStyles.push(labelActiveStyle)
-			if (inputActiveStyle) containerClasses.push(inputActiveStyle)
+			if (inputActiveStyle) inputStyles.push(inputActiveStyle)
 		}
 
 		if (this.props.error ) {
