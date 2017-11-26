@@ -28,8 +28,6 @@ class DatePicker extends React.Component {
     let date = new Date();
     let defaultValue = this.props.value ? this.props.value.split("-") : null;
 
-    console.log(date.getDate())
-
 		let year = date.getFullYear();
 		let month = date.getMonth() + 1;
     let day = date.getDate();

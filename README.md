@@ -497,7 +497,47 @@ class Class extends React.Component {
 
 export default ValidateForm(Form(Class, 'form'))
 ```
+### TimePicker
+Form TimePicker field.
+###### TimePicker Props
+TimePicker props.
+| Props                 | Type            | Description                                          |
+| ----------------------| :---------------| -----------------------------------------------------|
+| name                  | String          | Name of the input form element. Should be the same as the form field key. |    
+| onChange              | Func            | onChange prop provided by Form library.              |
+| style             | Object           | Style prop |
+| value                 | String | Value of the input field. HH:MM <24 hour>                 |
 
+##### Usage
+Ex.
+```
+import React from 'react'
+import {TimePicker, Form, ValidateForm} from 'react-native-form-library'
+
+class Class extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      form: {
+        time: ''
+      }
+    }
+  }
+  render () {
+    const {form} = this.state
+    const {formErrors, updateProperty} = this.props
+    return (
+      <TimePicker
+        name='time'
+        onChange={updateProperty}
+        value={form.time}
+      />
+    )
+  }
+}
+
+export default ValidateForm(Form(Class, 'form'))
+```
 
 
 ##### Usage
@@ -561,8 +601,6 @@ class Class extends React.Component {
 }
 export default ValidateForm(Form(Class, 'form'))
 ```
-
-
 
 ## License
 Copyright (2017)
